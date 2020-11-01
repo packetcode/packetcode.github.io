@@ -1,0 +1,42 @@
+/* Global (Common for every element) */
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Main Division (header) */
+.header {
+  background-image: url(cake.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+}
+
+/* Sub division (used for alignment - box) */
+.box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Heading - Bakeit! */
+h1 {
+  font-size: 5rem;
+}
+
+/* Button - Read More */
+.read {
+  margin-top: 2rem;
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+}

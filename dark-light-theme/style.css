@@ -1,0 +1,63 @@
+:root{
+    --light: #F1EBDF;
+    --dark: #26282C;
+}
+
+html, body{
+    background: var(--dark);
+    color: var(--light);
+}
+
+html[data-theme="light"]{
+    --dark: #F1EBDF;
+    --light: #26282C;
+}
+
+.light{
+    color: var(--light);
+}
+
+.dark{
+    color: var(--dark);
+}
+
+.light_bg{
+    background: var(--light);
+}
+
+.dark_bg{
+    background: var(--dark);
+}
+
+.main{
+    color: #EB6A6A;
+}
+
+.read_more{
+    color: var(--light);
+    background: var(--dark);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none !important;
+    border: 1px solid var(--dark);
+}
+
+.read_more:hover{
+    background: transparent;
+    transition: 0.5s ease;
+    color: var(--dark);
+}
+
+.theme_icon{
+    color: var(--light);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.theme_icon:hover{
+    color: #E7BB47;
+}
+
+.flip{
+    transform: rotate(360deg) !important;
+}

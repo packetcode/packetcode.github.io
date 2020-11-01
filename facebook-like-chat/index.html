@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- My jQuery -->
+    <script src="main.js"></script>
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/996973c893.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Chatroom</title>
+  </head>
+  <body>
+    <div class="chat_box">
+      <div class="chat_header">
+        <h1 class="chat_heading">Contacts</h1>
+      </div>
+      <hr />
+      <div class="chat_content">
+        <div class="user">
+          <img src="user.jpg" class="user_icon" />
+          <h3 class="username">Kamal Teja</h3>
+          <i class="fas fa-circle"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Message box -->
+    <div class="message_box">
+      <div class="message_header">
+        <img src="user.jpg" class="user_icon" />
+        <h3 class="username">Kamal Teja</h3>
+        <i class="fas fa-times close"></i>
+      </div>
+      <hr />
+      <div class="message_content">
+        <div class="messages">
+          <div class="p1">
+            <img src="user.jpg" class="user_icon_small" />
+            <p>This message is from him</p>
+          </div>
+          <div class="p2">
+            <p>This is from ME</p>
+          </div>
+          <div class="new_messages p2"></div>
+        </div>
+
+        <div class="input_box">
+          <textarea
+            class="message_input"
+            placeholder="Type a message..."
+          ></textarea>
+          <i class="fas fa-location-arrow enter"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

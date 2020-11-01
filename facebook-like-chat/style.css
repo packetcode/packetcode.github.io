@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #e9ebee;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h3,
+p,
+hr {
+  margin: 0;
+}
+
+/* Main Contacts */
+
+.chat_box {
+  background: #fff;
+  width: 20rem;
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.chat_header {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.chat_heading,
+.message_heading {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.chat_content {
+  height: 30rem;
+  padding: 1rem;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user_icon {
+  width: 1.5rem;
+  border-radius: 50%;
+}
+
+.username {
+  display: inline-block;
+  font-weight: 500;
+}
+
+.fa-circle {
+  font-size: 0.5rem;
+  color: #52de97;
+  justify-self: end;
+}
+
+/* Message box */
+
+.message_box {
+  background: #fff;
+  width: 15rem;
+  position: absolute;
+  bottom: 0;
+  right: 22rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.message_header {
+  display: grid;
+  grid-template-columns: 15% 75% 10%;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.messages {
+  height: 20rem;
+  overflow: auto;
+}
+
+.user_icon_small {
+  width: 1rem;
+  border-radius: 50%;
+}
+
+.p1 {
+  display: grid;
+  width: 90%;
+  margin: 1rem 1rem 1rem 0.5rem;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+}
+
+.p1 p {
+  background: #e9ebee;
+  padding: 5px 10px;
+  border-radius: 1rem;
+}
+
+.p2 {
+  display: grid;
+  justify-items: end;
+  margin: 1rem 1rem 0rem 1rem;
+}
+
+.p2 p {
+  background: #1877f2;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 5px 10px;
+  margin-bottom: 0.2rem;
+}
+
+.input_box {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  align-items: center;
+  padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+  border-top: 1px solid #000;
+}
+
+.message_input {
+  border: none;
+  width: 95%;
+  resize: none;
+  outline: none;
+}
+
+.fa-location-arrow {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.new_messages {
+  margin-top: 0;
+}

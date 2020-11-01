@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <title>Menu - Bootstrap</title>
+  </head>
+
+  <!-- 
+    Dark Theme :
+      body -- bg-dark
+      nav -- navbar-light, bg-light
+    Light Theme :
+      body -- bg-light
+      nav -- navbar-dark, bg-dark 
+  -->
+
+  <body class="bg-dark">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+      <a class="navbar-brand" href="#"
+        ><img src="images/square-logo.jpg" style="width: 3rem;" alt="logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Videos</a>
+          </li>
+          <li class="nav-item mr-3">
+            <!-- Dropdown -->
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-info dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Playlist
+              </button>
+              <!-- Dropdown items -->
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">HTML</a>
+                <a class="dropdown-item" href="#">CSS</a>
+                <a class="dropdown-item" href="#">Javascript</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">View All PLaylists</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-danger">Subscribe</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Dummy Data -->
+    <div class="container bg-white p-5 my-5 rounded">
+      <h1>Hello,</h1>
+      <h6>
+        This is just a template for a Menu Bar in CSS created for a video in
+        packetcode
+      </h6>
+    </div>
+
+    <div class="container ">
+      <div class="row justify-content-around">
+        <div class="card" style="width: 18rem;">
+          <img src="images/android.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/hacking.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/machine.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery & Bootstrap Javascript  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
