@@ -1,0 +1,132 @@
+:root{
+    --main : #EB6A6A;
+    --light: #F1EBDF;
+    --dark: #26282C;
+    --accent: #E7BB47;
+    --accent-2: #A76B4F;
+}
+
+/* Global */
+html, body{
+    background: var(--dark);
+    color: var(--light);
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none !important;
+}
+a:hover{
+    color: var(--main);
+}
+
+/* Theme Data */
+html[data-theme="light"]{
+    --dark: #F1EBDF;
+    --light: #26282C;
+    --accent-2: #E7BB47;
+    --accent: #A76B4F;
+}
+
+/* Default Color Classes */
+.light{
+    color: var(--light);
+}
+
+.dark{
+    color: var(--dark);
+}
+
+.light_bg{
+    background: var(--light);
+}
+
+.dark_bg{
+    background: var(--dark);
+}
+
+.main{
+    color: var(--main);
+}
+
+.main_bg{
+    background: var(--main);
+}
+
+/* Projects */
+.demo{
+    color: var(--light);
+    background: var(--main);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none !important;
+    border: 1px solid var(--main);
+}
+
+.demo:hover{
+    background: transparent;
+    transition: 0.5s ease;
+    color: var(--dark);
+}
+
+.code{
+    color: var(--light);
+    background: var(--dark);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none !important;
+    border: 1px solid var(--dark);
+}
+
+.code:hover{
+    background: transparent;
+    transition: 0.5s ease;
+    color: var(--dark);
+}
+
+/* Arrow in Open */
+.hvr-icon-forward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+.hvr-icon-forward .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    color: #E7BB47;
+}
+.hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+}
+
+/* Theme Icon */
+.theme_icon{
+    color: var(--light);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.theme_icon:hover{
+    color: var(--accent);
+}
+
+.flip{
+    transform: rotate(360deg) !important;
+}
+
+/* Cards */
+.card-body{
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
